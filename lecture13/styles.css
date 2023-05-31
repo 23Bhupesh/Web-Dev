@@ -36,3 +36,7 @@ article {
 p,article {
     width: 500px;
 }
+
+h2,footer {
+    background-color: pink;
+}
