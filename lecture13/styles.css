@@ -1,4 +1,38 @@
+/* using this css code for inline, internal, external css explanation.
+
 h1 {
-    background-color: black;
+    font-size: small;
     color: aqua;
+} */
+
+/* Using this code for explanation of selectors  */
+/* Selectors are elements */
+p {
+    color: red;
+    background-color: black ;
+}
+
+h1 {
+    background-color: aquamarine;
+}
+
+article {
+    color: yellow;
+    background-color: blue;
+}
+
+/* Selectors are Id's */
+#article1 {
+    font-size: large;
+
+}
+
+/* Selcetors are class Selectors */
+.classPara {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Selectors are groups */
+p,article {
+    width: 500px;
 }
