@@ -6,3 +6,5 @@ This is first project of HTML in the course.
 This is second Project of HTML in the course.
 
 3.[Project-3](https://23Bhupesh.github.io/Web-Development/lecture11/Project3/)
+This is third project of HTML in the course.
+
