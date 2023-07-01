@@ -12,14 +12,47 @@
         img {
             margin: 5px ;
         }
+        .image2 {
+            /*position: relative;  //jab relative property use krte hai, to web browser ke border se link rehta hai.
+            top: 100px;
+            left: 100px;*/
+
+            /*position: absolute;
+            top: 100px;
+            left: 100px;*/
+        }
+
+        .image3-b {
+            position: sticky;
+            top: 150px;
+        }
+
+        .image4 {
+            position: fixed;
+        }
+        .container1 {
+            height: 5000px;
+            background-color: aqua;
+        }
+        
+        .container2 {
+            background-color: khaki;
+            height: 2000px;
+        }
     </style>
 </head>
 <body>
     <!-- Learning about positioning properties -->
-    <div class="container">
+    <div class="container1">
     <img class="image1" src="image1.jpg" alt="image1" height="250px" width="250px">
     <img class="image2" src="image2.jpg" alt="image2" height="250px" width="250px">
     <img class="image3" src="image3.jpg" alt="image3" height="250px" width="250px">
+    <img class="image4" src="image4.jpeg" alt="image4" height="250px" width="250px">
+</div>
+<div class="container2">
+    <img class="image1" src="image1.jpg" alt="image1" height="250px" width="250px">
+    <img class="image2" src="image2.jpg" alt="image2" height="250px" width="250px">
+    <img class="image3-b" src="image3.jpg" alt="image33" height="250px" width="250px">
     <img class="image4" src="image4.jpeg" alt="image4" height="250px" width="250px">
 </div>
 </body>
