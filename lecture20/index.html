@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        .container {
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            height: 800px;
+            display: flex;
+
+            flex-direction: row;
+            /*flex-direction: column*/ 
+            /*flex-direction: column-reverse*/
+            /*flex-direction: row  (by default) */
+            /*flex-direction: row-reverse*/
+
+            /*flex-wrap: wrap;*/
+            /*flex-wrap: wrap-reverse;*/
+            /*flex-wrap: nowrap (By default) */
+            /*flex-wrap: wrap-reverse*/
+
+            
+            /*flex-flow:row;*/
+            /*short-hand notation ----- flex: (flex-grow) (flex-shrink) (flex-basis) ;*/
+            /*Home-Work*/
+
+            justify-content: start;
+            /*justify-content: start -----------starting point se start hoga*/
+            /*justify-content: end -------------ending of the line se start hoga*/
+            /*justify-content: space-between ----------first and last will be at the starting and ending respectively(No gap between starting and ending), and remaining will be at equal space */
+            /*justify-content: space-around  -----------having equal distance font start and end, having space from the starting point and ending itself*/
+            /*justify-content: space-evenly  -----------having equal distance, everywhere.*/
+
+            align-items: start;
+            /*align-items: start*/
+            /*align-items: center*/
+            /*align-items: end*/
+
+            align-content: start;
+            /*align-content: start*/
+            /*align-content: end*/
+            /*align-content: center*/
+
+            
+        }
+        .box {
+            /*height: 150px;
+            width: 150px;*/
+            border: 2px solid brown;
+            margin: 2px;
+            padding: 2px;x`
+        }
+        #box1 {
+            background-color: aqua;
+            /*order: 500;
+            flex-grow: 5;*/
+
+            /*align-self: center;*/
+            align-self: start;
+            /*align-self: end;*/
+
+        }
+        #box2 {
+            background-color: blue;
+            /*flex-grow: 1;*/
+
+        }
+        #box3 {
+            background-color: orange;
+            /*flex-grow: 1;*/
+
+        }
+        #box4 {
+            background-color: brown;
+            /*order: -1;*/
+            /*flex-shrink: 4;*/
+            /*flex-grow: 1;*/
+            /*flex-basis: 400px;*/                                    /*flex-basis is to set dimension*/
+
+
+        }
+
+
+        /*Flex-item Properties*/
+        /*1. Order ----- Sequence batata hai
+          2. flex-shrink (size small hona means shrink hona) ----- 
+          3. flex-grow (size big hona means grow hona )----- */
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+        <div class="box" id="box4">Box 4</div>
+    </div>
+</body>
+</html>
