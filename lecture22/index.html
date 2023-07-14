@@ -1,16 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        :root {
+            --primary-color: brown;     /*custom variables*/
+            --custom-width: 330px;        /*custom variables*/
+        }
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            background-color: beige;
+            height: 100vh;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {     
+            background-color: aquamarine;
+            width: var(--custom-width);
+            height: 330px;
+            border: 5px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+
+            /*box-shadow: 20px 55px brown;
+                            x    y   color
+
+            box-shadow: -30px -20px blue;*/
+
+            /*box-shadow: 20px 30px     50px     brown;
+                            x    y   blur radius color
+                            NOTE: Jitna jyada blur radius ki value, utni kam radius color  */
+
+            /*box-shadow: 10px  15px     5px         30px    brown ;
+                          x     y   blur-radius spread-radius color */
+
+            /*box-shadow: inset 20px 30px 15px 40px red;
+                        inside  x   y  blur-radius spread-radius color*/
+            
+            /*box-shadow: 10px 15px red, -15px -25px green ;
+        multiple shadows*/
+        }
+
+        img {
+            height: 200px;
+            width: 300px;
+        }
+
+        h2 {
+            /*text-shadow: 1px     1px    orange;
+                       x-offset y-offset color */
+
+            /*text-shadow:#fc0     1px       0       10px ;
+                        color    x-offset y-offset blur-radius*/
+            
+            /*text-shadow: 1px      1px         2px        red;
+                      x-offset  y-offset   blur-radius    color*/
+
+            /*text-shadow: 6px 0 5px  red, 0 6px 5px green, 7px 7px 5px blue; 
+            multiple text-shadows*/         
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
         <div class="box">
-            <p>Hello Everyone</p>
-            
+            <img src="image2.jpg" alt="">
+            <h2>Bhupesh Sahu</h2>
+            <p>Lorem ipsum, dolor sit recusandae ex dolor dolorum quia
+                ducimus distinctio. Enim, consequatur.</p>
+
         </div>
     </div>
 </body>
+
 </html>
