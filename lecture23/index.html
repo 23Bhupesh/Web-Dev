@@ -44,9 +44,11 @@
             /*animation-fill-mode: both;*/
 
             /*animation-play-state: paused;*/
-            animation-play-state: running;
+            /*animation-play-state: running;*/
             /*animation-play-state: paused;
             animation-play-state: paused;*/
+
+            animation: 5s linear 1s infinite alternate none running rightMovement;
 
 
 
@@ -64,15 +66,69 @@
                 left: 900px;
             }
         }
+
+        #box2 {
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border-radius: 10px;
+            border: 3px solid yellow;
+            margin: 10px;
+            position: relative;
+            animation: 5s ease-in 1s infinite alternate none running leftMovement;
+        }
+        @keyframes leftMovement {
+            from {
+                top: 280px;
+                left: 900px;
+            }
+            to {
+                top: 280px;
+                left: 0;
+            }
+        }
+        #circle {
+            width: 80px;
+            height: 80px;
+            background-color: blue;
+            border-radius: 100px;
+            border: 3px solid yellow;
+            margin: 10px;
+            position: relative;
+            top: 27%;
+            left: 45%;
+            animation: 10s ease-in-out 0s infinite alternate none running circleMovement;
+        }
+        @keyframes circleMovement {
+            0% {
+                top: 5%;
+                left: 5%;
+            }
+
+            30% {
+                top: 5%;
+                left: 90%;
+            }
+
+            60% {
+                top: 30%;
+                left: 10%;
+            }
+
+            100% {
+                top: 52%;
+                left: 80%;
+            }
+        }
     </style>
 </head>
 
 <body>
     <!-- Transformation from one state into the another is called as animation  -->
     <div class="container">
-        <div class="box">
-
-        </div>
+        <div class="box"></div>
+        <div id="circle"></div>
+        <div id="box2"></div>
     </div>
 
 </body>
