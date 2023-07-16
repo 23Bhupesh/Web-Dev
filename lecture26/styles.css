@@ -22,7 +22,6 @@ nav {
 .navContainer {
   padding: 15px;
   min-height: 80px;
-  width: 100%;
   background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
   align-items: center;
 }
@@ -48,7 +47,7 @@ a {
   list-style: none;
   font-size: 2.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -69,10 +68,10 @@ a {
   border-radius: 15px;
   width: 70%;
   margin: auto;
-  border: 1px solid black;
   background-color: white;
   margin-top: 20px;
   margin-bottom: 20px;
+  box-shadow: 0px 0px 30px black;
   background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
 }
 
@@ -85,6 +84,12 @@ a {
 .rightBox img {
   border-radius: 15px;
   border: 1px solid black;
+  transition: all 0.2s linear 0s ;
+  box-shadow: 0 0 10px black;
+}
+
+.rightBox img:hover {
+  transform: scale(1.1);
 }
 
 h2 h3 {
