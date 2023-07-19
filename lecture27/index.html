@@ -1,15 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project-2 (CSS)</title>
+    <title>Project-2 (Cards)</title>
+    <style>
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+            
+        }
+
+        .card {
+            width: 300px;
+            height: 430px;
+            background: #fff;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .card h2 {
+            margin: 0;
+            padding: 0px 15px;
+            font-weight: bold;
+            font-size: 1.55rem;
+        }
+
+        .card p {
+            margin: 0;
+            padding: 0px 15px;
+            font-size: 1.1em;
+        }
+
+        
+    </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="box">
-            Hello Everyone
+        <div class="card">
+            <img src="image.png" alt="">
+
+            <h2>improve your Front-end skills by developing projects.</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos exercitationem assumenda eligendi
+                
+            </p>
         </div>
     </div>
 </body>
+
 </html>
